@@ -126,6 +126,7 @@ aside#sx #search-bar{
 
 aside#sx #contacts{
     height: 80%;
+    overflow-y: auto;
 }
 #contacts .contact{
     width: 100%;
@@ -151,6 +152,7 @@ aside#dx .main{
     height: 85%;
     background-image: url('../img/mine.jpg');
     padding: 50px;
+    overflow-y: auto;
 }
 .sent,
 .recive{
