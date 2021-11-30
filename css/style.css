@@ -12,7 +12,9 @@
     clear: both;
 }
 
-
+body{
+    font-family: 'Nunito', sans-serif;
+}
 /* *** HEADER *** */
 
 header{
@@ -42,26 +44,71 @@ aside#sx{
 }
 aside#dx{
     width: 60%;
-    background-color: gray;
 }
 
-aside#sx #user-bar{
-    height: 8%;
+/*   conolla sinista   */
+.user-bar{
+    height: 7.5%;
     background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.user-bar .user{
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.user-bar .user img{
+    height: 40px;
+    border-radius: 50%;
+}
+.text a{
+    font-size: 12px;
+    color: #5e8da2;
+}
+
+.user-bar .icons{
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+    color: #b1b1b1;
+}
+
+
 aside#sx #notifications{
-    height: 8%;
+    height: 7.5%;
     background-color: #8edafc;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+aside#sx #notifications i{
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    padding: 12px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: #8edafc;
 }
 aside#sx #search-bar{
-    height: 4%;
+    height: 5%;
     background-color: #fafafa;
 }
 aside#sx #contacts{
     height: 80%;
-    background-color: red;
 }
-
+/*   conolla destra   */
+aside#dx .user-bar{
+border-left: 1px solid black;
+}
+aside#dx .main{
+    height: 85%;
+    background-image: url('../img/mine.jpg');
+}
 
 
 /* *** FOOTER *** */
@@ -69,6 +116,4 @@ footer{
     height: calc(100vh - 100px);
     background-color: #d6dbd7;
 }
-
-
 
