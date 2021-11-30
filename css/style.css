@@ -13,7 +13,6 @@
 }
 
 
-
 /* *** HEADER *** */
 
 header{
@@ -21,9 +20,14 @@ header{
     background-color: #009688;
 }
 
+
+
+
+
 /* *** MAIN *** */
 
 main{
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,11 +37,38 @@ main{
     background-color: white;
 }
 
+aside#sx{
+    width: 40%;
+}
+aside#dx{
+    width: 60%;
+    background-color: gray;
+}
+
+aside#sx #user-bar{
+    height: 8%;
+    background-color: #eaeaea;
+}
+aside#sx #notifications{
+    height: 8%;
+    background-color: #8edafc;
+}
+aside#sx #search-bar{
+    height: 4%;
+    background-color: #fafafa;
+}
+aside#sx #contacts{
+    height: 80%;
+    background-color: red;
+}
+
+
+
 /* *** FOOTER *** */
 footer{
     height: calc(100vh - 100px);
     background-color: #d6dbd7;
 }
 
-/* *** DEBUG *** */
+
 
