@@ -13,11 +13,31 @@
 }
 
 
+
 /* *** HEADER *** */
+
+header{
+    height: 100px;
+    background-color: #009688;
+}
 
 /* *** MAIN *** */
 
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: calc(100vh - 70px);
+    background-color: white;
+}
+
 /* *** FOOTER *** */
+footer{
+    height: calc(100vh - 100px);
+    background-color: #d6dbd7;
+}
 
 /* *** DEBUG *** */
 

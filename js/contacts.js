@@ -1,4 +1,6 @@
-alert('cioane');
+// alert('cioane');
+
+
 
 contacts: [
     {
