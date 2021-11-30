@@ -108,6 +108,7 @@ aside#sx #search-bar{
 #search-bar button{
     width: 12%;
     border: none;
+    border-radius: 5px;
     background-color: white;
     color: #c5c7c9;
     height: 70%;
@@ -117,7 +118,8 @@ aside#sx #search-bar{
     width: 80%;
     height: 70%;
     border: none;
-    margin-right: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
     color: #c5c7c9;
 }
 
@@ -139,7 +141,7 @@ aside#sx #contacts{
 
 /*   conolla destra   */
 aside#dx .user-bar{
-border-left: 1px solid black;
+border-left: 1px solid #e3e3e3;
 }
 #last-acces{
     font-size: 12px;
@@ -148,6 +150,30 @@ border-left: 1px solid black;
 aside#dx .main{
     height: 85%;
     background-image: url('../img/mine.jpg');
+}
+
+aside#dx .footer-bar{
+    height: 7.5%;
+    background-color: #eaeaea;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+aside#dx .footer-bar input{
+    width: 80%;
+    height: 90%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+aside#dx .footer-bar .contI{
+    width: 20%;
+    text-align: center;
+}
+aside#dx .footer-bar i{
+font-size: 20px;
+text-align: center;
 }
 
 
