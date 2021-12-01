@@ -83,7 +83,19 @@ const app = new Vue({
                 }
                 ],
             },
-        ]
+        ],
+
+        selectedContact: 0
+    },
+
+    
+
+    methods:{
+        selectMessage: function(i){
+            // console.log(this.contacts[i].message.message);
+            this.selectedContact = i;
+            console.log(i);
+        }
     }
 });
 
