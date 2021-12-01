@@ -86,7 +86,7 @@ const app = new Vue({
         ],
 
         selectedContact: 0,
-        check: 'received'
+        newMessage: ''
     },
 
     
@@ -98,7 +98,19 @@ const app = new Vue({
 
         changeClass: function(i){
             console.log(this.contacts[i].messages.status);
-            console.log(i);
+            // console.log(i);
+        },
+
+        addNewMessage(){
+            if(this.newMessage !== ''){
+                const newObject = {
+                    date: '10/01/2020 15:50:00',
+                    message: this.newMessage,
+                    status: 'sent'
+                };
+                this.contacts[selectedContact].messages.push(newObject);
+                this.newMessage = '';
+            }
         }
     }
 });
