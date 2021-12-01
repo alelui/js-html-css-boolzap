@@ -85,15 +85,19 @@ const app = new Vue({
             },
         ],
 
-        selectedContact: 0
+        selectedContact: 0,
+        check: 'received'
     },
 
     
 
     methods:{
         selectMessage: function(i){
-            // console.log(this.contacts[i].message.message);
             this.selectedContact = i;
+        },
+
+        changeClass: function(i){
+            console.log(this.contacts[i].messages.message);
             console.log(i);
         }
     }
