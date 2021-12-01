@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- myStylCss -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Boolenzap</title>
+    <title>Boolzap</title>
 </head>
 <body>
 
@@ -52,19 +52,10 @@
                 </section>
 
                 <section id="contacts">
-                    <div class="contact">
-                        <img src="img/avatar_2.jpg" alt="">
-                        <h4>Michele</h4>
-                    </div>
-                    <div class="contact">
-                        <img src="img/avatar_3.jpg" alt="">
-                        <h4>Ector</h4>
-                    </div>
-                    <div class="contact">
-                        <img src="img/avatar_4.jpg" alt="">
-                        <h4>Mario</h4>
-                    </div>
-                    
+                    <div class="contact" v-for="contact in contacts">
+                        <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="">
+                        <h4>{{contact.name}}</h4>
+                    </div>                    
                 </section>
             </aside>
 
