@@ -108,7 +108,7 @@ const app = new Vue({
                     message: this.newMessage,
                     status: 'sent'
                 };
-                this.contacts[selectedContact].messages.push(newObject);
+                this.contacts[this.selectedContact].messages.push(newObject);
                 this.newMessage = '';
             }
         }
