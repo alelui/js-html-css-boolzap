@@ -78,7 +78,7 @@
 
                 <section class="main">
                     <div class="row clearfix" v-for="(mess, index) in contacts[selectedContact].messages" >
-                        <div class="sent">
+                        <div :class="mess.status">
                             <!-- :class="contacts[selectedContact].messages.status == check ? 'received' : 'sent' " -->
                             <div class="mex-Text">
                                 <!-- <span>{{contacts[selectedContact].messages[selectedContact].message}}</span> -->

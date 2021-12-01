@@ -97,7 +97,7 @@ const app = new Vue({
         },
 
         changeClass: function(i){
-            console.log(this.contacts[i].messages.message);
+            console.log(this.contacts[i].messages.status);
             console.log(i);
         }
     }
