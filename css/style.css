@@ -135,6 +135,9 @@ aside#sx #contacts{
 .contact:hover{
     background-color: #e9ebeb;
 }
+.active{
+    background-color: #e9ebeb;
+}
 .contact img{
     height: 40px;
     border-radius: 50%;

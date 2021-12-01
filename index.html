@@ -52,7 +52,7 @@
                 </section>
 
                 <section id="contacts">
-                    <div class="contact" v-for="(contact, index) in contacts" @click="selectMessage(index)">
+                    <div class="contact" v-for="(contact, index) in contacts" @click="selectMessage(index)" :class="index == selectedContact ? 'active' : ''">
                         <!-- <img :src="'img/avatar' + contact.avatar + '.jpg'" alt=""> -->
                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
                         <h4>{{contact.name}}</h4>
@@ -79,9 +79,7 @@
                 <section class="main">
                     <div class="row clearfix" v-for="(mess, index) in contacts[selectedContact].messages" >
                         <div :class="mess.status">
-                            <!-- :class="contacts[selectedContact].messages.status == check ? 'received' : 'sent' " -->
                             <div class="mex-Text">
-                                <!-- <span>{{contacts[selectedContact].messages[selectedContact].message}}</span> -->
                                 <span>{{mess.message}}</span>
                             </div>
                             <div class="mex-Date">
@@ -89,16 +87,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row clearfix">
-                        <div class="received clearfix">
-                            <div class="mex-Text">
-                                <span>No problem bro!</span>
-                            </div>
-                            <div class="mex-Date">
-                                <span>12-12-12 alle 12:12</span>
-                            </div>
-                        </div>
-                    </div> -->
                 </section>
 
                 <section class="footer-bar">
