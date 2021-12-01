@@ -77,11 +77,11 @@
                 </section>
 
                 <section class="main">
-                    <div class="row clearfix" v-for="message in contacts[selectedContact].messages[selectedContact].message">
+                    <div class="row clearfix" v-for="mess in contacts[selectedContact].messages">
                         <div class="sent">
                             <div class="mex-Text">
                                 <!-- <span>{{contacts[selectedContact].messages[selectedContact].message}}</span> -->
-                                <span>{{message}}</span>
+                                <span>{{mess.message}}</span>
                             </div>
                             <div class="mex-Date">
                                 <span>12-12-12 alle 12:12</span>
