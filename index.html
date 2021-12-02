@@ -53,8 +53,8 @@
 
                 <section id="contacts">
                     <div class="contact" v-for="(contact, index) in contacts" @click="selectMessage(index)" :class="index == selectedContact ? 'active' : ''">
-                        <!-- <img :src="'img/avatar' + contact.avatar + '.jpg'" alt=""> -->
-                        <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
+                        <!-- <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="contact.name"> -->
+                        <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <h4>{{contact.name}}</h4>
                     </div>                    
                 </section>
@@ -63,9 +63,9 @@
             <aside id="dx">
                 <section class="user-bar">
                     <div class="user">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img :src="`img/avatar${contacts[selectedContact].avatar}.jpg`" :alt="`${contacts[selectedContact].name}`">
                         <div class="text">
-                            <h4>Michele</h4>
+                            <h4>{{contacts[selectedContact].name}}</h4>
                             <span id="last-acces" >Ultimo accesso oggi alle</span>
                         </div>
                     </div>

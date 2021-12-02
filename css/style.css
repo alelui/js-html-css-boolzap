@@ -156,7 +156,9 @@ border-left: 1px solid #e3e3e3;
 }
 aside#dx .main{
     height: 85%;
-    background-image: url('../img/mine.jpg');
+    background-image: url('../img/lupi.jpg');
+    background-position: center;
+    background-size: cover;
     padding: 50px;
     overflow-y: auto;
 }
