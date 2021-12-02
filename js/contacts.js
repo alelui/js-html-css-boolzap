@@ -86,7 +86,9 @@ const app = new Vue({
         ],
 
         selectedContact: 0,
-        newMessage: ''
+        newMessage: '',
+        // year : new Date().toLocaleDateString(),
+        // hour : new Date().toLocaleTimeString(),
     },
 
     
@@ -115,6 +117,8 @@ const app = new Vue({
                 this.newMessage = '';
 
                 setTimeout(function () { this.addAnsware() }.bind(this), 3 * 1000)
+
+                this.lastAccess()
             }
         },
 
@@ -128,6 +132,12 @@ const app = new Vue({
             };
             this.contacts[this.selectedContact].messages.push(newReceivedObject);
         },
+
+        lastAccess: function(){
+            const h = Math.floor(Math.random() * 24);
+            const m = Math.floor(Math.random() * 60);
+            console.log(h,':',m);
+        }
     
     }
 });
