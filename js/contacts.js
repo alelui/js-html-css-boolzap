@@ -110,10 +110,30 @@ const app = new Vue({
                     message: this.newMessage,
                     status: 'sent'
                 };
+
                 this.contacts[this.selectedContact].messages.push(newObject);
                 this.newMessage = '';
+
+                this.addAnsware() 
             }
-        }
+        },
+
+        addAnsware: function(){
+            const y = new Date().toLocaleDateString();
+            const h = new Date().toLocaleTimeString();
+            const newReceivedObject = {
+                date: y + " " + h,
+                message: 'ok',
+                status: 'received'
+            };
+            this.contacts[this.selectedContact].messages.push(newReceivedObject);
+            // setTimeout(function () { 
+            //     //alert('hello');
+            
+            // }, 3 * 1000)
+
+        },
+    
     }
 });
 
