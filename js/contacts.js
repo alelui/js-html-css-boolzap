@@ -103,8 +103,10 @@ const app = new Vue({
 
         addNewMessage(){
             if(this.newMessage !== ''){
+                const y = new Date().toLocaleDateString();
+                const h = new Date().toLocaleTimeString();
                 const newObject = {
-                    date: '10/01/2020 15:50:00',
+                    date: y + " " + h,
                     message: this.newMessage,
                     status: 'sent'
                 };

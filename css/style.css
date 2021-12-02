@@ -75,7 +75,8 @@ aside#dx{
     color: #b1b1b1;
 }
 .user-bar .icons i{
-    padding: 0 10px;
+    margin: 0 15px;
+    cursor: pointer;
 }
 
 
@@ -131,6 +132,7 @@ aside#sx #contacts{
     padding: 10px;
     border-top: 1px solid #f5f5f5;
     display: flex;
+    cursor: pointer;
 }
 .contact:hover{
     background-color: #e9ebeb;
@@ -161,9 +163,9 @@ aside#dx .main{
 .sent,
 .received{
     padding: 17px 10px 5px;
-    width: 45%;
     border-radius: 20px;
     margin: 10px 0;
+    float: left;
 }
 .sent{
     float: right;
@@ -200,6 +202,7 @@ aside#dx .footer-bar .contI{
 aside#dx .footer-bar i{
 font-size: 28px;
 text-align: center;
+cursor: pointer;
 }
 
 
