@@ -114,11 +114,16 @@ const app = new Vue({
                 this.contacts[this.selectedContact].messages.push(newObject);
                 this.newMessage = '';
 
-                this.addAnsware() 
+                // setTimeout(function () {
+                //     addAnsware() 
+                // }, 3 * 1000)
+
+                setTimeout(function () { this.addAnsware() }.bind(this), 3 * 1000)
             }
         },
 
         addAnsware: function(){
+            //alert('hello');
             const y = new Date().toLocaleDateString();
             const h = new Date().toLocaleTimeString();
             const newReceivedObject = {
@@ -127,11 +132,6 @@ const app = new Vue({
                 status: 'received'
             };
             this.contacts[this.selectedContact].messages.push(newReceivedObject);
-            // setTimeout(function () { 
-            //     //alert('hello');
-            
-            // }, 3 * 1000)
-
         },
     
     }
