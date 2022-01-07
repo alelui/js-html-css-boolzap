@@ -53,7 +53,6 @@ aside#dx{
     justify-content: space-between;
 }
 .user-bar .user{
-    width: 70%;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -69,13 +68,12 @@ aside#dx{
 }
 
 .user-bar .icons{
-    width: 30%;
     font-size: 24px;
     text-align: right;
     color: #b1b1b1;
 }
 .user-bar .icons i{
-    margin: 0 15px;
+    margin: 0 5px;
     cursor: pointer;
 }
 

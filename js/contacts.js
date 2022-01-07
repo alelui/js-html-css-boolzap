@@ -87,6 +87,7 @@ const app = new Vue({
 
         selectedContact: 0,
         newMessage: '',
+        search:'',
         // year : new Date().toLocaleDateString(),
         // hour : new Date().toLocaleTimeString(),
     },
@@ -133,11 +134,25 @@ const app = new Vue({
             this.contacts[this.selectedContact].messages.push(newReceivedObject);
         },
 
-        lastAccess: function(){
-            const h = Math.floor(Math.random() * 24);
-            const m = Math.floor(Math.random() * 60);
-            console.log(h,':',m);
+
+        filterContacts: function(){
+            this.contacts.forEach(element => {
+
+                if(element.name.includes(this.search)){
+                    element.visible = true;
+                }else{
+                    element.visible = false;
+                }
+            });
+
+            // console.log(this.search);
         }
+
+        // lastAccess: function(){
+        //     const h = Math.floor(Math.random() * 24);
+        //     const m = Math.floor(Math.random() * 60);
+        //     console.log(h,':',m);
+        // }
     
     }
 });

@@ -48,11 +48,11 @@
 
                 <section id="search-bar">
                     <button><i class="fas fa-search"></i></button>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="search" @keyup="filterContacts">
                 </section>
 
                 <section id="contacts">
-                    <div class="contact" v-for="(contact, index) in contacts" @click="selectMessage(index)" :class="index == selectedContact ? 'active' : ''">
+                    <div class="contact" v-for="(contact, index) in contacts" @click="selectMessage(index)" :class="index == selectedContact ? 'active' : ''" v-if="contact.visible">
                         <!-- <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="contact.name"> -->
                         <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <h4>{{contact.name}}</h4>
